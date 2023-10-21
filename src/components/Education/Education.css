@@ -1,0 +1,130 @@
+.education {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.education__circle {
+  position: absolute;
+  left: -20px;
+  top: -32px;
+}
+
+.education__header {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 55px;
+  color: #232e35;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 0 32px 0;
+  text-align: center;
+}
+
+.education__line {
+  position: absolute;
+  top: 45px;
+  left: 44px;
+  height: calc(100% - 150px);
+  width: 2px;
+  background-color: #f1f1f1;
+  transform-origin: top left;
+}
+
+.education__list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 42px 0;
+  max-width: 600px;
+  position: relative;
+}
+
+.education__list-cell {
+  margin: 0 0 34px 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+}
+
+.education__list-container {
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.education__list-head {
+  margin: 10px auto 20px auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232e35;
+  max-width: 450px;
+}
+
+.education__list-text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+}
+
+.education__list-year {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7e74f1;
+  padding-left: 10px;
+  min-width: 82px;
+  text-align: right;
+}
+
+.education__pre-header {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  color: #656d72;
+  padding-top: 114px;
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .education__list {
+    padding-top: 22px;
+  }
+
+  .education__circle {
+    left: -90px;
+  }
+
+  .education__line {
+    top: 30px;
+    left: -26px;
+    height: calc(100% - 170px);
+  }
+
+  .education__list {
+    padding-top: 22px;
+    max-width: 300px;
+  }
+
+  .education__list-cell {
+    width: 300px;
+    margin-left: ;
+  }
+}

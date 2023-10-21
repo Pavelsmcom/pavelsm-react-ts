@@ -1,0 +1,52 @@
+.portfolio {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px 106px 40px;
+}
+
+.portfolio__pre-header {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  color: #656d72;
+  padding-top: 114px;
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.portfolio__text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 55px;
+  color: #232e35;
+  max-width: 1280px;
+  margin: 0;
+  padding: 16px 0 32px 0;
+  text-align: center;
+}
+
+.portfolio__work {
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.portfolio__works {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  gap: 50px;
+  padding: 14px 0 0 0;
+}

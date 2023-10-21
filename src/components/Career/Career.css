@@ -1,0 +1,203 @@
+.career {
+  padding: 0 40px 21px 40px;
+  margin: 0 auto;
+}
+
+.career__company-header {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #232e35;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.career__company-post-header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #656d72;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.career__company-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656d72;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.career__container {
+  width: 975px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  gap: 51px;
+}
+
+.career__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656d72;
+  min-height: 300px;
+}
+
+.career__header {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #232e35;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 0 32px 0;
+  text-align: center;
+}
+
+.career__pre-header {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  color: #656d72;
+  padding-top: 114px;
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.career__skill {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #656d72;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 4px 4px;
+}
+
+.career__skills {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.career__switch-arrow {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-right: 32px;
+  color: #7e74f1;
+}
+
+.career__switch-cell {
+  width: 280px;
+  height: 52px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+}
+
+.career__switch-cell:hover {
+  background-color: #eae6fe;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+
+.career__switch-cell_active {
+  background-color: #eae6fe;
+}
+
+.career__switch-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 32px;
+}
+
+.career__switch-text_active {
+  color: #7e74f1;
+}
+
+.career__switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .career__company-header {
+    text-align: center;
+  }
+
+  .career__company-post-header {
+    text-align: center;
+  }
+
+  .career__container {
+    flex-direction: column;
+    max-width: 300px;
+    gap: 21px;
+  }
+
+  .career__skills {
+    justify-content: center;
+  }
+
+  .career__switch-arrow {
+    display: none;
+  }
+
+  .career__switch-cell {
+    justify-content: center;
+    margin: 0 auto 9px auto;
+  }
+
+  .career__switch-text {
+    padding-left: 0;
+  }
+
+  .career__switcher {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .career__container {
+    width: 650px;
+    gap: 21px;
+  }
+
+  .career__description {
+    min-height: 400px;
+  }
+}

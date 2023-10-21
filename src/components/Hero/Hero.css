@@ -1,0 +1,122 @@
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 151px 40px 151px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__before-name {
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  color: #656d72;
+  padding-top: 0;
+  margin: 0;
+}
+
+.hero__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #232e35;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.hero__info {
+  max-width: 700px;
+}
+
+.hero__name {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 55px;
+  color: #232e35;
+  margin: 0;
+  padding: 16px 0 32px 0;
+}
+
+.hero__photo {
+  width: 360px;
+  height: 360px;
+  padding: 0;
+}
+
+.hero__second-name {
+  color: #7e74f1;
+}
+
+.hero__skill {
+  display: inline-block;
+  transition: 0.2s;
+  width: 36px;
+  height: 36px;
+}
+
+.hero__skill-codewars {
+  display: inline-block;
+  transition: 0.2s;
+  width: 120px;
+  height: 20px;
+}
+
+.hero__skill-codewars:hover {
+  transform: translateY(-4px);
+}
+
+.hero__skill:hover {
+  transform: translateY(-4px);
+}
+
+.hero__skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  gap: 30px;
+  padding: 15px 0 15px 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    flex-direction: column-reverse;
+    min-height: 696px;
+    padding-top: 81px;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 21px 40px;
+    gap: 0;
+  }
+
+  .hero__name {
+    padding: 6px 0 12px 0;
+  }
+
+  .hero__description {
+    padding-bottom: 10px;
+  }
+
+  .hero__photo {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero__skills {
+    padding: 0;
+  }
+}

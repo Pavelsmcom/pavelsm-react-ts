@@ -1,0 +1,41 @@
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.swipe-hint {
+  display: block;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 2;
+  animation-name: visible;
+  animation-duration: 3.2s;
+  opacity: 0;
+}
+
+.swipe-hint__gif {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 767px) {
+  .swipe-hint {
+    display: none;
+  }
+}
