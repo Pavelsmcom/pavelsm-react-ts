@@ -10,7 +10,6 @@ import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 import Skills from "../Skills/Skills";
 import Portfolio from "../Portfolio/Portfolio";
-// import Experience from "../Experience/Experience";
 import SwipeHint from "../SwipeHint/SwipeHint";
 
 function App() {
@@ -50,19 +49,6 @@ function App() {
         isLeftSwipe ? navigate("/") : navigate("/skills");
       }
     }
-    /*
-    if (isLeftSwipe || isRightSwipe) {
-      if (location.pathname === "/") {
-        isLeftSwipe ? navigate("/skills") : navigate("/workExp");
-      } else if (location.pathname === "/skills") {
-        isLeftSwipe ? navigate("/portfolio") : navigate("/");
-      } else if (location.pathname === "/portfolio") {
-        isLeftSwipe ? navigate("/workExp") : navigate("/skills");
-      } else if (location.pathname === "/workExp") {
-        isLeftSwipe ? navigate("/") : navigate("/portfolio");
-      }
-    }
-    */
   };
 
   return (
@@ -74,7 +60,6 @@ function App() {
             <Route path="/" element={<Main />} key={1} />
             <Route path="/skills" element={<Skills />} key={2} />
             <Route path="/portfolio" element={<Portfolio />} key={3} />
-            {/* <Route path="/workExp" element={<Experience />} key={4} /> */}
           </Routes>
         </AnimatePresence>
         {isSwipeHintVisible && <SwipeHint />}
