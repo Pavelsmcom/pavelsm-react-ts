@@ -2,7 +2,6 @@ import "./App.css";
 
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, TouchEvent } from "react";
-// import React from "react";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -11,7 +10,7 @@ import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 import Skills from "../Skills/Skills";
 import Portfolio from "../Portfolio/Portfolio";
-import Experience from "../Experience/Experience";
+// import Experience from "../Experience/Experience";
 import SwipeHint from "../SwipeHint/SwipeHint";
 
 function App() {
@@ -44,6 +43,16 @@ function App() {
     const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe || isRightSwipe) {
       if (location.pathname === "/") {
+        isLeftSwipe ? navigate("/skills") : navigate("/portfolio");
+      } else if (location.pathname === "/skills") {
+        isLeftSwipe ? navigate("/portfolio") : navigate("/");
+      } else if (location.pathname === "/portfolio") {
+        isLeftSwipe ? navigate("/") : navigate("/skills");
+      }
+    }
+    /*
+    if (isLeftSwipe || isRightSwipe) {
+      if (location.pathname === "/") {
         isLeftSwipe ? navigate("/skills") : navigate("/workExp");
       } else if (location.pathname === "/skills") {
         isLeftSwipe ? navigate("/portfolio") : navigate("/");
@@ -53,6 +62,7 @@ function App() {
         isLeftSwipe ? navigate("/") : navigate("/portfolio");
       }
     }
+    */
   };
 
   return (
@@ -63,8 +73,8 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Main />} key={1} />
             <Route path="/skills" element={<Skills />} key={2} />
-            <Route path="/portfolio" element={<Portfolio />} key={2} />
-            <Route path="/workExp" element={<Experience />} key={2} />
+            <Route path="/portfolio" element={<Portfolio />} key={3} />
+            {/* <Route path="/workExp" element={<Experience />} key={4} /> */}
           </Routes>
         </AnimatePresence>
         {isSwipeHintVisible && <SwipeHint />}

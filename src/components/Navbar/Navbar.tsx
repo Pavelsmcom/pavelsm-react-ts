@@ -47,7 +47,7 @@ function Navbar({ isBurgerOpen, closeBurgerMenu }: NavbarProps) {
             <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             onClick={closeBurgerMenu}
             to="/workExp"
@@ -58,7 +58,7 @@ function Navbar({ isBurgerOpen, closeBurgerMenu }: NavbarProps) {
             Experience
             <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
